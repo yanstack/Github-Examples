@@ -5,7 +5,7 @@ on:
     branches:
       - main
   issues:
-    types: [opened,labeled]
+    types: [opened,labeled,closed]
 jobs:
   expression-functions:
     runs-on: ubuntu-latest

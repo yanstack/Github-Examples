@@ -1,0 +1,16 @@
+name: Inputs and Outputs
+
+on:
+  workflow_dispatch:
+    inputs:
+      file-path:
+        description: "Path to test script"
+        required: true
+        default: "test-file.js"
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    outputs:
+        results-file: # id of output
+        description: "Path to results file"

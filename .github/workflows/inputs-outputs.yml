@@ -11,6 +11,10 @@ on:
 jobs:
   greet:
     runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        run: 
+            echo "For otupust"
     outputs:
         results-file: # id of output
         description: "Path to results file"

@@ -1,0 +1,11 @@
+name: Caller Workflow
+
+on: [push]
+
+jobs:
+  call-reusable-workflow:
+    uses: ./.github/workflows/reusable-workflow.yml
+    with:
+      build_id: 2
+      deploy_target: "Amazon S3"
+      perform_deploy: true

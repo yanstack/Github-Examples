@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
   call-reusable-workflow:
-    uses: ./.github/workflows/reusable-workflow.yml
+    uses: ./.github/workflows/inputs-workflow-call.yml
     with:
       build_id: 2
       deploy_target: "Amazon S3"

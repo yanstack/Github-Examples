@@ -13,4 +13,4 @@ jobs:
     steps:
       - name: deploy
         run: |
-          echo "hello world $EMAIL - $APY_KEY "
+          echo "hello world ${{EMAIL}} - ${{APY_KEY}} "
